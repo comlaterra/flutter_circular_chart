@@ -118,10 +118,11 @@ class AnimatedCircularChart extends StatefulWidget {
     assert(context != null);
     assert(nullOk != null);
 
-    final AnimatedCircularChartState result = context
-        .ancestorStateOfType(const TypeMatcher<AnimatedCircularChartState>());
-
-    if (nullOk || result != null) return result;
+    final AnimatedCircularChartState result =
+        context.findAncestorStateOfType<AnimatedCircularChartState>();
+    if (nullOk || result != null) {
+      return result;
+    }
 
     throw new FlutterError(
         'AnimatedCircularChart.of() called with a context that does not contain a AnimatedCircularChart.\n'
