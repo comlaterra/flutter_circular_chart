@@ -1,3 +1,7 @@
+## [0.2.0] - 2021-02-27
+
+* Some quick fixes.
+
 ## [0.1.0] - 2018-08-30
 
 * **Breaking change**. Adjusted Flutter SDK constraint to match beta (0.6.0).
